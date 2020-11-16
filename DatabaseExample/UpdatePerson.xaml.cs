@@ -42,6 +42,7 @@ namespace DatabaseExample
             {
                 db.UpdatePerson(Convert.ToInt32(id_text.Text), firstNameTextbox.Text, lastNameTextbox.Text, emailTextbox.Text, phoneNumberTextbox.Text);
 
+                MessageBox.Show("Record Updated.");
                 this.Close();
                 MainWindow mw = new MainWindow();
                 mw.Show();
