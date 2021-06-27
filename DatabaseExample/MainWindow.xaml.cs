@@ -32,7 +32,7 @@ namespace DatabaseExample
             peopleFoundListbox.DisplayMemberPath = "FullInfo";
         }
 
-        private void searchButton_Click(object sender, RoutedEventArgs e)
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
         {
             if (!lastNameText.Text.Equals(""))
             {
@@ -49,7 +49,7 @@ namespace DatabaseExample
             }
         }
 
-        private void addRecordButton_Click(object sender, RoutedEventArgs e)
+        private void AddRecordButton_Click(object sender, RoutedEventArgs e)
         {
             if (!lastNameTextBox.Text.Equals("") && !firstNameText.Text.Equals("") && !emailText.Text.Equals("") &&
             !phoneNumberText.Text.Equals(""))
@@ -66,7 +66,7 @@ namespace DatabaseExample
             }
         }
 
-        private void peopleFoundListbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void PeopleFoundListbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             var item = (ListBox)sender;
             var person = (Person)item.SelectedItem;
@@ -80,7 +80,7 @@ namespace DatabaseExample
             }
         }
 
-        private void clearButton_Click(object sender, RoutedEventArgs e)
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
             lastNameText.Text = "";
             peopleFoundListbox.ItemsSource = "";

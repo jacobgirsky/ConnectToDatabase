@@ -10,10 +10,10 @@
         Title="Database
         " Height="450" Width="550">
     <Grid>
-        <ListBox x:Name="peopleFoundListbox" HorizontalAlignment="Left" Height="119" Margin="197,121,0,0"  VerticalAlignment="Top" Width="272" SelectionChanged="peopleFoundListbox_SelectionChanged"/>
+        <ListBox x:Name="peopleFoundListbox" HorizontalAlignment="Left" Height="119" Margin="197,121,0,0"  VerticalAlignment="Top" Width="272" SelectionChanged="PeopleFoundListbox_SelectionChanged"/>
         <TextBox x:Name="lastNameText" HorizontalAlignment="Left" Height="23" Margin="176,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
         <Label x:Name="label" Content="Last Name:" HorizontalAlignment="Left" Margin="102,31,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Margin="197,75,0,0" VerticalAlignment="Top" Width="75" Click="searchButton_Click"/>
+        <Button x:Name="searchButton" Content="Search" HorizontalAlignment="Left" Margin="197,75,0,0" VerticalAlignment="Top" Width="75" Click="SearchButton_Click"/>
         <TextBox x:Name="lastNameTextBox" HorizontalAlignment="Left" Height="23" Margin="176,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
         <Label x:Name="label_Copy" Content="Last Name:" HorizontalAlignment="Left" Margin="102,298,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="emailText" HorizontalAlignment="Left" Height="23" Margin="176,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
@@ -22,8 +22,8 @@
         <Label x:Name="label_Copy2" Content="Phone Number:" HorizontalAlignment="Left" Margin="78,366,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="firstNameText" HorizontalAlignment="Left" Height="23" Margin="176,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121"/>
         <Label x:Name="label_Copy3" Content="First Name:" HorizontalAlignment="Left" Margin="101,270,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="addRecordButton" Content="Add Record" HorizontalAlignment="Left" Margin="339,323,0,0" VerticalAlignment="Top" Width="75" Click="addRecordButton_Click"/>
-        <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Left" Margin="385,75,0,0" VerticalAlignment="Top" Width="75" Click="clearButton_Click"/>
+        <Button x:Name="addRecordButton" Content="Add Record" HorizontalAlignment="Left" Margin="339,323,0,0" VerticalAlignment="Top" Width="75" Click="AddRecordButton_Click"/>
+        <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Left" Margin="385,75,0,0" VerticalAlignment="Top" Width="75" Click="ClearButton_Click"/>
 
     </Grid>
 </Window>
