@@ -18,13 +18,11 @@ namespace DatabaseExample
 
     public partial class MainWindow : Window
     {
-        private List<Person> people;
-        private DataAccess db;
+        private readonly DataAccess db;
 
         public MainWindow()
         {
             InitializeComponent();
-            people = new List<Person>();
             db = new DataAccess();
         }
 
@@ -77,9 +75,15 @@ namespace DatabaseExample
             if (answer == MessageBoxResult.Yes)
             {
                 UpdatePerson upd = new UpdatePerson(person);
-                this.Hide();
+                Hide();
                 upd.Show();
             }
+        }
+
+        private void clearButton_Click(object sender, RoutedEventArgs e)
+        {
+            lastNameText.Text = "";
+            peopleFoundListbox.ItemsSource = "";
         }
     }
 }
